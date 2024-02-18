@@ -1,4 +1,4 @@
-import ids from "../config/id";
+import ids from '../config/id';
 
 const Component = () => {
   return (
@@ -8,8 +8,7 @@ const Component = () => {
     >
       <h1 className="text-center text-4xl mb-3">¿Quién soy?</h1>
       <div className="flex max-h-96">
-        <div className="w-1/3 h-auto flex justify-center items-start">
-        </div>
+        <div className="w-1/3 h-auto flex justify-center items-start"></div>
         <div className="w-2/3">
           <p className="">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam

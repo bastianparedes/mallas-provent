@@ -1,8 +1,8 @@
-import ids from "../config/id";
-import Email from "../icons/Email.svg";
-import Facebook from "../icons/Facebook.svg";
-import Instagram from "../icons/Instagram.svg";
-import Whatsapp from "../icons/Whatsapp.svg";
+import ids from '../config/id';
+import Email from '../icons/Email.svg';
+import Facebook from '../icons/Facebook.svg';
+import Instagram from '../icons/Instagram.svg';
+import Whatsapp from '../icons/Whatsapp.svg';
 
 const Component = () => {
   return (

@@ -1,4 +1,4 @@
-import ids from "../../config/id";
+import ids from '../../config/id';
 import React from 'react';
 import Image from 'next/image';
 import Product from './Product.webp';
@@ -14,18 +14,19 @@ const Component = () => {
           Tu familia <span className="text-lime-600">protegida</span> siempre
         </h1>
         <p className="text-2xl md:text-xl">
-          Mallas de seguridad para ventanas y balcones. Brindamos seguridad en el espacio más importante de tu vida, tu hogar.
+          Mallas de seguridad para ventanas y balcones. Brindamos seguridad en
+          el espacio más importante de tu vida, tu hogar.
         </p>
         <div className="flex gap-8">
           <a
             className="border-2 border-solid border-orange-400 bg-orange-400 text-white text-center rounded-lg py-3 px-6 text-lg font-semibold no-underline lg:px-2"
-            href={"#" + ids.products}
+            href={'#' + ids.products}
           >
             Ver mangas
           </a>
           <a
             className="border-2 border-solid border-orange-400 bg-white text-orange-400 text-center rounded-lg py-3 px-6 text-lg font-semibold no-underline  lg:px-2"
-            href={"#" + ids.contact}
+            href={'#' + ids.contact}
           >
             Contáctame
           </a>
@@ -38,7 +39,6 @@ const Component = () => {
           placeholder="blur"
           src={Product}
         />
-
       </div>
     </section>
   );

@@ -22,4 +22,4 @@ const pictures = [
   Picture10
 ];
 
-export default pictures
+export default pictures;

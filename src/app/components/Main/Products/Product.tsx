@@ -6,19 +6,20 @@ interface Props {
 }
 
 const formatPrice = (number: number) =>
-  number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+  number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
 
-const Price = (
-  { price, priceSale }: {
-    price: Props["price"];
-    priceSale: Props["priceSale"];
-  },
-) => {
+const Price = ({
+  price,
+  priceSale
+}: {
+  price: Props['price'];
+  priceSale: Props['priceSale'];
+}) => {
   if (priceSale === undefined) {
     return <span className="font-bold text-base">$ {formatPrice(price)}</span>;
   }
 
-  const discount = 100 - Math.round(100 * priceSale / price);
+  const discount = 100 - Math.round((100 * priceSale) / price);
   return (
     <>
       <div className="flex items-center gap-2">
@@ -35,7 +36,7 @@ const Price = (
 };
 
 const Component = ({ name, picture, price, priceSale }: Props) => {
-  const phoneNumber = process.env["phoneNumber"] ?? '';
+  const phoneNumber = process.env['phoneNumber'] ?? '';
   return (
     <div className="w-auto h-auto flex justify-center">
       <div className="flex justify-start flex-col w-52 md:w-32">
@@ -45,8 +46,7 @@ const Component = ({ name, picture, price, priceSale }: Props) => {
             href={`https://api.whatsapp.com/send?phone=${phoneNumber}&text=Hola Nanko Mangas!, quiero comprar "${name}"`}
             rel="noopener noreferrer"
             target="_blank"
-          >
-          </a>
+          ></a>
         </div>
         <span className="my-1 md:text-base/4">{name}</span>
         <Price price={price} priceSale={priceSale} />
