@@ -1,8 +1,8 @@
 // import Contact from "./Contact";
 import Hero from './Hero';
-import About from './About';
+/* import About from './About'; */
 import Carousel from './Carousel';
-import Products from './Products/index';
+/* import Products from './Products/index'; */
 
 const Component = () => {
   return (
@@ -11,7 +11,7 @@ const Component = () => {
       {/* <About /> */}
       <Carousel />
       {/* <Contact /> */}
-      <Products />
+      {/* <Products /> */}
     </main>
   );
 };

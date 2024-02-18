@@ -18,7 +18,7 @@ const Component = () => {
 
   return (
     <header
-      className="fixed flex w-full top-0 left-0 z-10 px-14 py-1 h-32 bg-orange-100/80 backdrop-blur-sm lg:px-4 md:h-20"
+      className="fixed flex w-full top-0 left-0 z-10 px-14 py-1 h-32 bg-lime-100/80 backdrop-blur-sm lg:px-4 md:h-20"
       style={{
         transform: showHeader || showOptions ? undefined : 'translateY(-100%)',
         transition: 'all .25s linear'
