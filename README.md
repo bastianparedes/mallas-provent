@@ -8,6 +8,5 @@ Tailwind
 In the console run ```npm run dev```
 
 ## Environment Variables
-basePath: Not needed
-phoneNumber: Not needed
-
+- basePath: Not needed
+- phoneNumber: Not needed

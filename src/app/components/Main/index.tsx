@@ -1,6 +1,7 @@
 // import Contact from "./Contact";
 import Hero from "./Hero";
 import About from "./About";
+import Carousel from "./Carousel";
 import Products from "./Products/index";
 
 const Component = () => {
@@ -8,6 +9,7 @@ const Component = () => {
     <main>
       <Hero />
       {/* <About /> */}
+      <Carousel />
       {/* <Contact /> */}
       <Products />
     </main>
