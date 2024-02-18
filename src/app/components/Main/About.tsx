@@ -9,12 +9,6 @@ const Component = () => {
       <h1 className="text-center text-4xl mb-3">¿Quién soy?</h1>
       <div className="flex max-h-96">
         <div className="w-1/3 h-auto flex justify-center items-start">
-          <img
-            alt="Owner"
-            className="w-full h-full object-contain"
-            loading="lazy"
-            src="/image/girl.png"
-          />
         </div>
         <div className="w-2/3">
           <p className="">

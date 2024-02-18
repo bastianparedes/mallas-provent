@@ -35,7 +35,7 @@ const Price = (
 };
 
 const Component = ({ name, picture, price, priceSale }: Props) => {
-  const phoneNumber = Deno.env.get("phoneNumber") ?? "";
+  const phoneNumber = process.env["phoneNumber"] ?? '';
   return (
     <div className="w-auto h-auto flex justify-center">
       <div className="flex justify-start flex-col w-52 md:w-32">
@@ -46,12 +46,6 @@ const Component = ({ name, picture, price, priceSale }: Props) => {
             rel="noopener noreferrer"
             target="_blank"
           >
-            <img
-              alt={name}
-              className="w-full h-full object-cover duration-[400ms] ease-in-out hover:scale-[1.2] md:hover:scale-[initial]"
-              loading="lazy"
-              src={"/image/mangas/" + picture}
-            />
           </a>
         </div>
         <span className="my-1 md:text-base/4">{name}</span>
