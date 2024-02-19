@@ -1,17 +1,13 @@
-// import Contact from "./Contact";
 import Hero from './Hero';
-/* import About from './About'; */
+import Contact from './Contact/index';
 import Carousel from './Carousel';
-/* import Products from './Products/index'; */
 
 const Component = () => {
   return (
     <main>
       <Hero />
-      {/* <About /> */}
       <Carousel />
-      {/* <Contact /> */}
-      {/* <Products /> */}
+      <Contact />
     </main>
   );
 };

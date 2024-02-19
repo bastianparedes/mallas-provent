@@ -22,11 +22,13 @@ const Component = () => {
             className="border-2 border-solid border-lime-500 bg-lime-500 text-white text-center rounded-lg py-3 px-6 text-lg font-semibold no-underline lg:px-2"
             href={'#' + ids.products}
           >
-            Ver mangas
+            Ver fotos
           </a>
           <a
             className="border-2 border-solid border-lime-500 bg-white text-lime-500 text-center rounded-lg py-3 px-6 text-lg font-semibold no-underline  lg:px-2"
-            href={'https://www.instagram.com/mallas_provent/'}
+            href="https://www.instagram.com/mallas_provent/"
+            rel="noopener"
+            target="_blank"
           >
             Contáctame
           </a>

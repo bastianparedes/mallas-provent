@@ -50,10 +50,15 @@ const Component = () => {
             </Button>
             {/* <Button href={"#" + ids.about} onClick={switchShowOptions}>Acerca de mí</Button> */}
             <Button href={'#' + ids.contact} onClick={switchShowOptions}>
-              ¿Cómo comprar?
+              Ver fotos
             </Button>
-            <Button href={'#' + ids.products} onClick={switchShowOptions}>
-              Mangas disponibles
+            <Button
+              target="_blank"
+              href="https://www.instagram.com/mallas_provent/"
+              onClick={switchShowOptions}
+              rel="noopener"
+            >
+              Contáctame
             </Button>
           </ul>
         </nav>
