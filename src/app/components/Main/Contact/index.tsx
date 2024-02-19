@@ -1,58 +1,39 @@
 'use client';
 
-import X from '../../icons/X';
 import { useState } from 'react';
+import Modal from './Modal';
 
 const Component = () => {
-  const [isModalOpen, setIsModalOpen] = useState(true);
-  const [message, setMessage] = useState('');
-
-  const onChangeMessage = (event: React.ChangeEvent<HTMLTextAreaElement>) =>
-    setMessage(event.target.value);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
 
-  const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    console.log(message);
-    closeModal();
-  };
-
   return (
     <>
-      <section></section>
-      {isModalOpen && (
-        <div
-          className="w-svw h-svh bg-gray-500/80 fixed top-0 left-0 z-10 flex items-center justify-center"
-          /* onClick={closeModal} */
-        >
-          <div className="bg-white relative rounded-md p-4">
+      <section className="mt-10 font-extrabold">
+        <h1 className="text-center text-3xl">Contáctanos</h1>
+        <ul className="flex justify-center gap-10">
+          <li className="flex">
+            <a
+              className="border-2 border-solid border-lime-500 bg-lime-500 text-white text-center rounded-lg py-3 px-6 text-lg font-semibold no-underline lg:px-2"
+              href="https://www.instagram.com/mallas_provent/"
+              rel="noopener"
+              target="_blank"
+            >
+              Ir a Instagram
+            </a>
+          </li>
+          <li className="flex">
             <button
-              className="rounded-full flex items-center justify-center text-3xl absolute top-0 right-0 bg-inherit border-black border-2 translate-x-1/2 -translate-y-1/2"
-              onClick={closeModal}
+              className="border-2 border-solid border-lime-500 bg-white text-lime-500 text-center rounded-lg py-3 px-6 text-lg font-semibold no-underline lg:px-2"
+              onClick={openModal}
             >
-              <X />
+              Enviar mensaje
             </button>
-            <form
-              className="flex flex-col justify-center gap-2"
-              onSubmit={onSubmit}
-            >
-              <textarea
-                className="resize-none w-96 h-52 text-xl"
-                name="textarea"
-                onChange={onChangeMessage}
-                placeholder="Escribe aquí tu mensaje"
-                value={message}
-              />
-              <input
-                className="bg-lime-500 p-3 rounded-md w-auto text-white text-xl"
-                type="submit"
-                value="Enviar"
-              />
-            </form>
-          </div>
-        </div>
-      )}
+          </li>
+        </ul>
+      </section>
+      {isModalOpen && <Modal closeModal={closeModal} />}
     </>
   );
 };
